@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards de Trigonometria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        .flashcard-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .flashcard {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #333;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .flashcard:hover {
+            transform: scale(1.05);
+        }
+
+        .flashcard .question {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .flashcard .answer {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .flashcard.show-answer .answer {
+            display: block;
+        }
+
+        .flashcard.show-answer .question {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="flashcard-container">
+        <!-- Flashcard 1 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é um seno?</div>
+            <div class="answer">Seno é a razão entre o cateto oposto e a hipotenusa.</div>
+        </div>
+
+        <!-- Flashcard 2 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é o cosseno?</div>
+            <div class="answer">Cosseno é a razão entre o cateto adjacente e a hipotenusa.</div>
+        </div>
+
+        <!-- Flashcard 3 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">Qual é a fórmula da tangente?</div>
+            <div class="answer">Tangente é a razão entre o cateto oposto e o cateto adjacente.</div>
+        </div>
+
+        <!-- Flashcard 4 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é a identidade pitagórica?</div>
+            <div class="answer">a² + b² = c², onde a e b são os catetos e c é a hipotenusa.</div>
+        </div>
+
+        <!-- Flashcard 5 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">Como calcular a hipotenusa no triângulo retângulo?</div>
+            <div class="answer">Usando a fórmula: c = √(a² + b²)</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(card) {
+            card.classList.toggle('show-answer');
+        }
+    </script>
+</body>
+</html>

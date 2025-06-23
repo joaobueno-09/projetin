@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #c70505;
+            background-color: #f4f4f9;
         }
 
         .flashcard-container {
@@ -26,10 +26,10 @@
         .flashcard {
             width: 200px;
             height: 200px;
-            background-color: #ffffff;
-            border: 1px solid #fffefe;
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -70,7 +70,7 @@
     <div class="flashcard-container">
         <!-- Flashcard 1 -->
         <div class="flashcard" onclick="toggleAnswer(this)">
-            <div class="question">O que é um seno?</div>
+            <div class="question">O que é o seno?</div>
             <div class="answer">Seno é a razão entre o cateto oposto e a hipotenusa.</div>
         </div>
 
@@ -96,6 +96,30 @@
         <div class="flashcard" onclick="toggleAnswer(this)">
             <div class="question">Como calcular a hipotenusa no triângulo retângulo?</div>
             <div class="answer">Usando a fórmula: c = √(a² + b²)</div>
+        </div>
+
+        <!-- Flashcard 6 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é a cotangente?</div>
+            <div class="answer">Cotangente é o inverso da tangente, ou seja, cot(θ) = 1/tan(θ).</div>
+        </div>
+
+        <!-- Flashcard 7 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é a secante?</div>
+            <div class="answer">Secante é o inverso do cosseno, ou seja, sec(θ) = 1/cos(θ).</div>
+        </div>
+
+        <!-- Flashcard 8 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">O que é a cossecante?</div>
+            <div class="answer">Cossecante é o inverso do seno, ou seja, csc(θ) = 1/sin(θ).</div>
+        </div>
+
+        <!-- Flashcard 9 -->
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">Qual é a fórmula de Euler?</div>
+            <div class="answer">e^(iπ) + 1 = 0, uma das fórmulas mais famosas da matemática.</div>
         </div>
     </div>
 
